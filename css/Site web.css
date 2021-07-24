@@ -1,0 +1,4 @@
+#box{display: flex;}
+    .b1{padding: 10px; width: 33%; border-right: 1.8mm ridge rgb(255, 255, 255);}
+    .b2{padding: 10px; width: 33%;border-right: 1.8mm ridge rgb(255, 255, 255);}
+    .b3{padding: 10px; width: 33%;}
