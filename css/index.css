@@ -6,14 +6,14 @@
 .txt{
     padding : 10px;
 }
-
 p{
     padding: -5px;
 }
-
 @media (max-width: 850px) {
     .img{width: 50px;height: 50px;font-size: small;}
     .box{width: 100%;height: 320px;}
 }
-
 .lli{ margin: 10px auto 20px 30px;}
+.input-c{width: 100px;height: 30px; }
+.input-c, .text {display: block; margin-left: auto; margin-right: auto; border-radius: 15px;}
+.text{height: 20px;}
