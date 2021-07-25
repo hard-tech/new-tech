@@ -163,6 +163,8 @@ ol{
         cursor: pointer;   
         margin-top: -90px;
         display: block;
+        align-items: center;
+        text-align: center
     }
     .Box-invite
     {
