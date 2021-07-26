@@ -8,12 +8,14 @@
         <link rel="icon" type="image/png" href="./image/logo team/logo_small_icon_only_inverted.png" />
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/sign-in.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="./script/app.js"></script>
         <title>new-tech</title>
     </head>
 <div class="all">
     <body background="./image/background/ox6j99.png">
         <div class="nav">
-            <nav>
+            <!-- <nav>
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
                     <li class="deroulant"><a href="#">Projet</a>
@@ -36,11 +38,20 @@
                     </li>
                     <li style="float:right"><a href="about.html">&Agrave; propos</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </div>
+
     <div class="haut">
         <h1>Site officiel de new-tech</h1>
     </div>
+
+        <div class="negatif-site"><h2 class="Bl">N&eacute;gatif</h2>
+            <label class="toggle" id="toggle">
+                <input type="checkbox"  onclick="onoff(this)">
+                <span class="slider round"></span>
+            </label>
+        </div> 
+        <div class="invers-element"></div>
 
     <font color="white"> 
         <form action=""  method="POST" enctype="multipart/form-data" id="inscription"> 
