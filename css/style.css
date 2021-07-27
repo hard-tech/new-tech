@@ -51,14 +51,12 @@ body{
 }
 
 .box{
-    border: 1.8mm ridge rgb(255, 255, 255);
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin: 100px auto auto -7.219px;
-    color: white;
-    background-color: rgb(24, 24, 24);  
     border-radius: 15px;
+    border: 1.8mm ridge #333;
 }
 
 @media (min-width: 850px){
@@ -90,12 +88,14 @@ body{
     .container{padding: 15px;}
     .cancelbtn{padding: 5px 9px;font-size: xx-small;}
     .r{font-size: 6px ; margin-left: -5px;}
+    .style-boutton-background-jour-nuit{border: 3px solid #4CAF50;}
 }
 
 @media (min-width: 507px){
     .container{padding: 30px;}
     .cancelbtn{padding: 10px 18px;}
     .r{font-size: x-small ;}
+    .style-boutton-background-jour-nuit{border: 5px solid #4CAF50;}
 }
 
 a{
@@ -135,42 +135,65 @@ ol{
     margin: auto 0 auto 0 auto;
 }
 
- code style néon
+/* .liste-home-text{
+    
+} */
+
+ /* code style néon */
 
         .neon{
             font-family: 'Montserrat';
             text-shadow: 0 0 5px black, 0 0 10px #fff;
         }       
 
-    .R{ color: rgb(255, 0, 0); text-shadow: 0 0 5px black, 0 0 10px rgb(255, 0, 0); }
-    .V{ color: rgb(0, 255, 0); text-shadow: 0 0 5px rgb(21, 255, 0), 0 0 10px rgb(0, 255, 0);;}
-    .B{ color: rgb(0, 81, 255); text-shadow: 0 0 5px black, 0 0 10px rgb(0, 68, 255); ;}
-    .J{ color: yellow; text-shadow: 0 0 5px black, 0 0 10px yellow; }
-    .Bl{ color: rgb(255, 255, 255); text-shadow: 0 0 5px black, 0 0 10px rgb(255, 255, 255); ;}
+    .R{ color: rgb(255, 0, 0); text-shadow: 0 0 5px rgb(255, 0, 0); }
+    .V{ color: rgb(0, 255, 0); text-shadow: 0 0 5px rgb(21, 255, 0);}
+    .B{ color: rgb(0, 81, 255); text-shadow: 0 0 5px rgb(0, 68, 255), 0 0 8px rgb(0, 68, 255); ;}
+    .J{ color: yellow; text-shadow: 0 0 5px yellow, 0 0 10px yellow; }
+    .Bl{text-shadow:  0 0 5px rgb(255, 255, 255);;}
+    
 
+/* Mode nuit */
+
+/** Dark CSS */
+
+.dark-them {
+    background-color: rgb(26, 26, 26);
+    color: #ffffff;
+  }
+
+.white-them{
+    color: black;
+    background-color: rgba(255, 249, 249, 0.918);
+}  
+
+.border-333-color{border: 1.8mm ridge #333;}
+
+.dark button {
+    background: #000000;
+    color: #fff;
+}
 
 /* negatif */
 
 /* #negatif,#switch-site{display: block;} */
 
-.negatif-site{
+.style-boutton-background-jour-nuit{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 5px solid #4CAF50;
     border-radius: 15px;
-    padding: 5px;
-    padding-bottom: 10px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
+    font-size: x-small;
 }
 
 .toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
   }
   
   .toggle input { 
@@ -194,21 +217,21 @@ ol{
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #333;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #333;
   }
   
   input:checked + .slider:before {
@@ -250,7 +273,6 @@ ol{
     border-radius: 10px;
     font-family: 'Pacifico', cursive;
     font-size: 35px;
-    color: #ffffff;
     text-decoration: none;
     background-color: #7289da;
     border-bottom: 5px solid #556ab6;
